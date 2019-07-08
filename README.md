@@ -18,7 +18,7 @@ The only requirement is having docker (and vscode) up and running.
 
 ## Usage
 
-- Install a recent version of vscode and the [remote development extension](- Install the [remote development extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) 
+- Install a recent version of vscode and the [remote development extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) 
 
 - Open this project folder
 
