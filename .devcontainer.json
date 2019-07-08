@@ -1,0 +1,10 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+{
+	"name": "Clojure Dev",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "clojure-dev",
+	"workspaceFolder": "/usr/src",
+	"extensions": [
+		"avli.clojure",
+	]
+}

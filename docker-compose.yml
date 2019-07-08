@@ -1,0 +1,9 @@
+version: '3'
+services:
+  clojure-dev:
+    image: "clojure:openjdk-8-lein"
+    command: sleep infinity
+    volumes:
+      - .:/usr/src
+  redis:
+    image: "redis:alpine"
