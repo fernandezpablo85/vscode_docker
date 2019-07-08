@@ -1,44 +1,35 @@
-# sample
+# vscode & docker sample
 
-FIXME: description
+This is an example on how to use docker (or docker-compose) as a [dev environment on vscode](https://code.visualstudio.com/docs/remote/containers).
 
-## Installation
+## What?
 
-Download from http://example.com/FIXME.
+This is a clojure project. One of it's tests requires redis running. The idea is for you to be able to run the tests and generate the jar for running the project without:
+
+- having java installed
+
+- having clojure installed
+
+- having any of the clojure or java 3rd party dependencies installed
+
+- having redis running on your dev box
+
+The only requirement is having docker up and running.
 
 ## Usage
 
-FIXME: explanation
+- Open this project with a recent version of vscode. Update if in doubt.
 
-    $ java -jar sample-0.1.0-standalone.jar [args]
+- You will be prompted to reopen folder in container. Choose yes.
 
-## Options
+- After a while your editor should open.
 
-FIXME: listing of options this app accepts.
+- Open a Terminal (inside vscode) and run `lein test`, this should:
+    - install missing dependencies
+    - run tests, one of them against a running redis instance
 
-## Examples
+- Open a Terminal (inside vscode) and run `lein uberjar`, this should:
+    - install missing dependencies
+    - after a while, generate a big fat jar `target/uberjar/sample-0.1.0-SNAPSHOT-standalone.jar`
 
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2019 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+- Optional: if you have java installed on your dev box, you can run that jar by doing `java -jar target/uberjar/sample-0.1.0-SNAPSHOT-standalone.jar`
