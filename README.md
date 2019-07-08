@@ -14,11 +14,13 @@ This is a clojure project. One of it's tests requires redis running. The idea is
 
 - having redis running on your dev box
 
-The only requirement is having docker up and running.
+The only requirement is having docker (and vscode) up and running.
 
 ## Usage
 
-- Open this project with a recent version of vscode. Update if in doubt.
+- Install a recent version of vscode and the [remote development extension](- Install the [remote development extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) 
+
+- Open this project folder
 
 - You will be prompted to reopen folder in container. Choose yes.
 
